@@ -433,8 +433,6 @@ body {
       flex-direction: column;
     }
   }
-  &__block {
-  }
 }
 
 .block-author {
@@ -458,6 +456,7 @@ body {
   &__image {
     position: relative;
     padding-bottom: 134%;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.2));
 
     @media (max-width: 529.98px) {
       padding-bottom: 0;
@@ -477,6 +476,7 @@ body {
     }
   }
   &__text-col {
+    max-width: 280px;
   }
   &__title {
     font-family: 'Cardo', sans-serif;
@@ -493,8 +493,6 @@ body {
     margin-bottom: 17px;
   }
   &__text {
-    max-width: 280px;
-
     p {
       font-size: 1.1rem;
       line-height: 150%;

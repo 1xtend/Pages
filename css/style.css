@@ -488,6 +488,7 @@ body.is-fixed {
     flex-direction: column;
   }
 }
+
 .block-author {
   display: flex;
   align-items: center;
@@ -511,6 +512,7 @@ body.is-fixed {
 .block-author__image {
   position: relative;
   padding-bottom: 134%;
+  filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.2));
 }
 @media (max-width: 529.98px) {
   .block-author__image {
@@ -531,6 +533,9 @@ body.is-fixed {
     position: relative;
   }
 }
+.block-author__text-col {
+  max-width: 280px;
+}
 .block-author__title {
   font-family: "Cardo", sans-serif;
   font-size: 1.88rem;
@@ -544,9 +549,6 @@ body.is-fixed {
   line-height: 157%;
   color: var(--color-yellow);
   margin-bottom: 17px;
-}
-.block-author__text {
-  max-width: 280px;
 }
 .block-author__text p {
   font-size: 1.1rem;
