@@ -706,3 +706,46 @@ body {
     }
   }
 }
+
+// Sponsors
+
+.sponsors {
+  &__body {
+    padding: 130px 0;
+
+    @media (max-width: 767.98px) {
+      padding: 50px 0;
+    }
+  }
+  &__title-block {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 16px;
+    row-gap: 35px;
+    justify-content: center;
+  }
+  &__card {
+    text-align: center;
+  }
+  &__img {
+    margin-bottom: 22px;
+  }
+  &__title {
+    font-family: 'Cardo';
+    font-size: 1.4rem;
+    line-height: 120%;
+    color: var(--color-blue);
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-size: 1.1rem;
+    line-height: 150%;
+    color: var(--color-light-grey);
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}

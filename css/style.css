@@ -756,3 +756,44 @@ body.is-fixed {
 .contact-about__link:hover {
   text-decoration: underline;
 }
+
+.sponsors__body {
+  padding: 130px 0;
+}
+@media (max-width: 767.98px) {
+  .sponsors__body {
+    padding: 50px 0;
+  }
+}
+.sponsors__title-block {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.sponsors__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 35px;
+  justify-content: center;
+}
+.sponsors__card {
+  text-align: center;
+}
+.sponsors__img {
+  margin-bottom: 22px;
+}
+.sponsors__title {
+  font-family: "Cardo";
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: var(--color-blue);
+  margin-bottom: 16px;
+}
+.sponsors__text {
+  font-size: 1.1rem;
+  line-height: 150%;
+  color: var(--color-light-grey);
+  max-width: 280px;
+  margin: 0 auto;
+}
