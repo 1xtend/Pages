@@ -356,6 +356,11 @@ body.is-fixed {
     margin: 0 auto;
   }
 }
+@media (max-width: 767.98px) {
+  .hero__content {
+    max-width: 100%;
+  }
+}
 .hero__uptitle {
   font-family: "Cardo", sans-serif, serif;
   font-size: 1.2rem;
