@@ -1060,6 +1060,8 @@ body.is-fixed {
 .card-knowledge {
   background-color: #fff;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .card-knowledge__title {
   font-family: "Cardo";
@@ -1073,6 +1075,7 @@ body.is-fixed {
   line-height: 170%;
   color: var(--color-light-grey);
   margin-bottom: 10px;
+  flex: 1 1 100%;
 }
 
 .card-info {
