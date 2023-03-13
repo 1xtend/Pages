@@ -95,6 +95,8 @@ h6 {
   --color-yellow-active: #e7ac18;
   --color-blue-grey: #b4c7e7;
   --color-light-grey: #969aa0;
+  --color-grey-bg: #f4f8ff;
+  --color-grey-bg-light: #f5f8fc;
 }
 
 body {
@@ -251,10 +253,11 @@ body.is-fixed {
     right: 0;
     background-color: #284a80;
     border-bottom-left-radius: 5px;
-    padding: 90px 15px 15px;
+    padding: 90px 50px 15px 15px;
     gap: 30px;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 }
 .navbar__link {
@@ -271,6 +274,11 @@ body.is-fixed {
 }
 .navbar__link_svg:hover svg path {
   fill: var(--color-yellow);
+}
+@media (max-width: 870px) {
+  .navbar__btn {
+    display: none;
+  }
 }
 
 .nav-toggler {
@@ -292,7 +300,7 @@ body.is-fixed {
   width: 100%;
   height: 2px;
   border-radius: 1px;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 .nav-toggler span:nth-child(1) {
   transform: translateY(-11px);
@@ -610,7 +618,7 @@ body.is-fixed {
 }
 
 .about {
-  background-color: #f5f8fc;
+  background-color: var(--color-grey-bg-light);
 }
 .about__body {
   padding: 150px 0 140px;
@@ -988,4 +996,121 @@ body.is-fixed {
   line-height: 140%;
   color: var(--color-blue);
   max-width: 227px;
+}
+
+.knowledge {
+  background-color: var(--color-grey-bg);
+}
+.knowledge__body {
+  padding: 116px 0 130px;
+}
+@media (max-width: 767.98px) {
+  .knowledge__body {
+    padding: 50px 0;
+  }
+}
+.knowledge__title-block {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.knowledge__content {
+  display: grid;
+  gap: 40px 30px;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 70px;
+}
+@media (max-width: 767.98px) {
+  .knowledge__content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+}
+.knowledge__bottom {
+  text-align: center;
+}
+.knowledge__btn {
+  margin-bottom: 34px;
+}
+@media (min-width: 319.98px) {
+  .knowledge__btn {
+    padding: 5px 22px;
+  }
+}
+@media (min-width: 439.98px) {
+  .knowledge__btn {
+    padding: 5px 92px;
+  }
+}
+.knowledge__text {
+  max-width: 330px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 158%;
+  color: var(--color-light-grey);
+}
+.knowledge__text a {
+  color: var(--color-blue);
+  letter-spacing: 0.19px;
+}
+.knowledge__text a:hover {
+  text-decoration: underline;
+}
+
+.card-knowledge {
+  background-color: #fff;
+  padding: 40px;
+}
+.card-knowledge__title {
+  font-family: "Cardo";
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: var(--color-blue);
+  margin-bottom: 21px;
+}
+.card-knowledge__text {
+  font-size: 1.1rem;
+  line-height: 170%;
+  color: var(--color-light-grey);
+  margin-bottom: 10px;
+}
+
+.card-info {
+  display: flex;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+  row-gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-info__block {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card-info__title {
+  font-family: "Cardo";
+  font-size: 1.3rem;
+  line-height: 140%;
+  color: var(--color-blue);
+}
+.card-info__title span {
+  position: relative;
+  padding-left: 26px;
+}
+.card-info__title span::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.card-info__text {
+  font-size: 1rem;
+  line-height: 159%;
+  color: var(--color-light-grey);
 }
