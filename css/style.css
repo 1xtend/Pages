@@ -128,7 +128,7 @@ body.is-fixed {
   align-items: center;
   justify-content: center;
   padding: 5px 52px;
-  font-family: "Cardo", sans-serif, sans-serif, serif;
+  font-family: "Cardo", sans-serif;
   letter-spacing: 0.57px;
   transition: background-color 0.2s linear;
   text-transform: capitalize;
@@ -141,7 +141,7 @@ body.is-fixed {
 }
 
 .secondary-btn {
-  font-family: "Cardo", sans-serif, sans-serif;
+  font-family: "Cardo", sans-serif;
   font-size: 1.1rem;
   line-height: 150%;
   letter-spacing: 0.38px;
@@ -168,7 +168,7 @@ body.is-fixed {
   justify-content: center;
 }
 .title-block__title {
-  font-family: "Cardo", sans-serif, sans-serif;
+  font-family: "Cardo", sans-serif;
   font-size: 2.47rem;
   line-height: 119%;
   text-transform: capitalize;
@@ -372,7 +372,7 @@ body.is-fixed {
   }
 }
 .hero__uptitle {
-  font-family: "Cardo", sans-serif, sans-serif, serif;
+  font-family: "Cardo", sans-serif;
   font-size: 1.2rem;
   line-height: 171%;
   letter-spacing: 1.2px;
@@ -397,7 +397,7 @@ body.is-fixed {
   }
 }
 .hero__title {
-  font-family: "Cardo", sans-serif, sans-serif, serif;
+  font-family: "Cardo", sans-serif;
   font-size: 3.8rem;
   line-height: 122%;
   letter-spacing: 1.3px;
@@ -460,7 +460,7 @@ body.is-fixed {
   }
 }
 .buttons-hero__btn_underlined {
-  font-family: "Cardo", sans-serif, sans-serif, serif;
+  font-family: "Cardo", sans-serif;
   font-size: 1.1rem;
   line-height: 158%;
   letter-spacing: 0.38px;
@@ -513,7 +513,7 @@ body.is-fixed {
   left: 0;
 }
 .achievements-hero__title {
-  font-family: "Cardo", sans-serif, sans-serif, serif;
+  font-family: "Cardo", sans-serif;
   font-size: 1.4rem;
   line-height: 120%;
   letter-spacing: 0.48px;
@@ -590,7 +590,7 @@ body.is-fixed {
   max-width: 280px;
 }
 .block-author__title {
-  font-family: "Cardo", sans-serif, sans-serif;
+  font-family: "Cardo", sans-serif;
   font-size: 1.88rem;
   line-height: 119%;
   letter-spacing: 0.32px;
@@ -613,7 +613,7 @@ body.is-fixed {
   margin-bottom: 27px;
 }
 .block-author__add-info span {
-  font-family: "Cardo", sans-serif, sans-serif;
+  font-family: "Cardo", sans-serif;
   font-size: 1.4rem;
   line-height: 120%;
   color: var(--color-blue);
@@ -724,7 +724,7 @@ body.is-fixed {
   border-right: 1px solid var(--color-yellow);
 }
 .cols-about__number {
-  font-family: "Cardo", sans-serif, sans-serif;
+  font-family: "Cardo", sans-serif;
   font-size: 3.1rem;
   line-height: 143%;
   color: var(--color-blue);
@@ -1298,7 +1298,7 @@ body.is-fixed {
 }
 
 .articles {
-  background-color: #f4f8ff;
+  background-color: var(--color-grey-bg);
 }
 .articles__body {
   padding: 126px 0 150px;
@@ -1490,4 +1490,150 @@ body.is-fixed {
     width: 100%;
     padding: 5px 80px;
   }
+}
+
+.footer {
+  background-color: var(--color-blue);
+}
+.footer__body {
+  padding: 94px 0 24px;
+}
+@media (max-width: 767.98px) {
+  .footer__body {
+    padding: 50px 0 20px;
+  }
+}
+.footer__cols {
+  display: grid;
+  grid-template-columns: 250px 138px 215px 331px;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  gap: 15px;
+}
+@media (max-width: 1149.98px) {
+  .footer__cols {
+    grid-template-columns: repeat(2, minmax(265px, 330px));
+    justify-content: center;
+    gap: 15px;
+  }
+}
+@media (max-width: 579.98px) {
+  .footer__cols {
+    grid-template-columns: repeat(1, minmax(300px, 330px));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__social {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-yellow);
+  transition: background-color 0.2s linear;
+}
+.footer__social:hover {
+  background-color: var(--color-yellow);
+}
+.footer__social:active {
+  background-color: var(--color-yellow-hover);
+}
+.footer__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 1.4rem;
+  line-height: 140%;
+  letter-spacing: 0.384px;
+  color: #fff;
+}
+.footer__copy {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--color-blue-grey);
+  letter-spacing: 0.17px;
+}
+.footer__copy a {
+  color: #fff;
+}
+.footer__copy a:hover {
+  text-decoration: underline;
+}
+
+.col-footer__title {
+  margin-bottom: 24px;
+}
+.col-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-left: 13px;
+}
+.col-footer__link {
+  font-size: 1rem;
+  line-height: 180%;
+  color: var(--color-blue-grey);
+  letter-spacing: 0.18px;
+  position: relative;
+  padding-left: 29px;
+  transition: color 0.2s linear;
+}
+.col-footer__link::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  background: url("../images/footer/footer-list-dots.svg") left no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.col-footer__link:hover {
+  color: var(--color-light-grey);
+}
+
+@media (max-width: 1149.98px) {
+  .info-footer {
+    grid-area: 1/2/2/3;
+  }
+}
+@media (max-width: 579.98px) {
+  .info-footer {
+    grid-area: auto;
+  }
+}
+.info-footer__title {
+  margin-bottom: 27px;
+}
+.info-footer__content {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  gap: 28px;
+}
+@media (max-width: 1149.98px) {
+  .info-footer__content {
+    gap: 15px;
+  }
+}
+.info-footer__small-title {
+  font-family: "Cardo", sans-serif;
+  font-size: 1.05rem;
+  line-height: 150%;
+  letter-spacing: 0.36px;
+  color: #ffffff;
+}
+.info-footer__text {
+  font-size: 1rem;
+  line-height: 159%;
+  color: var(--color-light-grey);
+}
+.info-footer__link:hover {
+  text-decoration: underline;
 }

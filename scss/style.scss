@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap');
 @import './nullstyle.scss';
 
-// font-family: 'Cardo', serif;
-// font-family: 'Inter', sans-serif;
-
 // Global styles
 
 :root {
@@ -11,7 +8,6 @@
   --color-yellow: #ffca42;
   --color-yellow-hover: #faba19;
   --color-yellow-active: #e7ac18;
-
   --color-blue-grey: #b4c7e7;
   --color-light-grey: #969aa0;
   --color-grey-bg: #f4f8ff;
@@ -48,7 +44,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 5px 52px;
-  font-family: 'Cardo', sans-serif, sans-serif, serif;
+  font-family: 'Cardo', sans-serif;
   letter-spacing: 0.57px;
   transition: background-color 0.2s linear;
   text-transform: capitalize;
@@ -63,7 +59,7 @@ body {
 }
 
 .secondary-btn {
-  font-family: 'Cardo', sans-serif, sans-serif;
+  font-family: 'Cardo', sans-serif;
   font-size: 1.1rem;
   line-height: 150%;
   letter-spacing: 0.38px;
@@ -91,7 +87,7 @@ body {
   justify-content: center;
 
   &__title {
-    font-family: 'Cardo', sans-serif, sans-serif;
+    font-family: 'Cardo', sans-serif;
     font-size: 2.47rem;
     line-height: 119%;
     text-transform: capitalize;
@@ -311,7 +307,7 @@ body {
     }
   }
   &__uptitle {
-    font-family: 'Cardo', sans-serif, sans-serif, serif;
+    font-family: 'Cardo', sans-serif;
     font-size: 1.2rem;
     line-height: 171%;
     letter-spacing: 1.2px;
@@ -336,7 +332,7 @@ body {
     }
   }
   &__title {
-    font-family: 'Cardo', sans-serif, sans-serif, serif;
+    font-family: 'Cardo', sans-serif;
     font-size: 3.8rem;
     line-height: 122%;
     letter-spacing: 1.3px;
@@ -395,7 +391,7 @@ body {
     }
 
     &_underlined {
-      font-family: 'Cardo', sans-serif, sans-serif, serif;
+      font-family: 'Cardo', sans-serif;
       font-size: 1.1rem;
       line-height: 158%;
       letter-spacing: 0.38px;
@@ -458,7 +454,7 @@ body {
     }
   }
   &__title {
-    font-family: 'Cardo', sans-serif, sans-serif, serif;
+    font-family: 'Cardo', sans-serif;
     font-size: 1.4rem;
     line-height: 120%;
     letter-spacing: 0.48px;
@@ -534,7 +530,7 @@ body {
     max-width: 280px;
   }
   &__title {
-    font-family: 'Cardo', sans-serif, sans-serif;
+    font-family: 'Cardo', sans-serif;
     font-size: 1.88rem;
     line-height: 119%;
     letter-spacing: 0.32px;
@@ -559,7 +555,7 @@ body {
     margin-bottom: 27px;
 
     span {
-      font-family: 'Cardo', sans-serif, sans-serif;
+      font-family: 'Cardo', sans-serif;
       font-size: 1.4rem;
       line-height: 120%;
       color: var(--color-blue);
@@ -670,7 +666,7 @@ body {
     border-right: 1px solid var(--color-yellow);
   }
   &__number {
-    font-family: 'Cardo', sans-serif, sans-serif;
+    font-family: 'Cardo', sans-serif;
     font-size: 3.1rem;
     line-height: 143%;
     color: var(--color-blue);
@@ -1250,7 +1246,7 @@ body {
 // Articles
 
 .articles {
-  background-color: #f4f8ff;
+  background-color: var(--color-grey-bg);
 
   &__body {
     padding: 126px 0 150px;
@@ -1439,5 +1435,163 @@ body {
       width: 100%;
       padding: 5px 80px;
     }
+  }
+}
+
+// Footer
+
+.footer {
+  background-color: var(--color-blue);
+
+  &__body {
+    padding: 94px 0 24px;
+
+    @media (max-width: 767.98px) {
+      padding: 50px 0 20px;
+    }
+  }
+  &__cols {
+    display: grid;
+    grid-template-columns: 250px 138px 215px 331px;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    gap: 15px;
+
+    @media (max-width: 1149.98px) {
+      grid-template-columns: repeat(2, minmax(265px, 330px));
+      justify-content: center;
+      gap: 15px;
+    }
+
+    @media (max-width: 579.98px) {
+      grid-template-columns: repeat(1, minmax(300px, 330px));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+  }
+  &__media {
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__social {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--color-yellow);
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      background-color: var(--color-yellow);
+    }
+    &:active {
+      background-color: var(--color-yellow-hover);
+    }
+  }
+  &__col {
+  }
+  &__title {
+    font-family: 'Cardo', sans-serif;
+    font-size: 1.4rem;
+    line-height: 140%;
+    letter-spacing: 0.384px;
+    color: #fff;
+  }
+  &__info {
+  }
+  &__copy {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--color-blue-grey);
+    letter-spacing: 0.17px;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.col-footer {
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-left: 13px;
+  }
+  &__link {
+    font-size: 1rem;
+    line-height: 180%;
+    color: var(--color-blue-grey);
+    letter-spacing: 0.18px;
+    position: relative;
+    padding-left: 29px;
+    transition: color 0.2s linear;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 4px;
+      background: url('../images/footer/footer-list-dots.svg') left no-repeat;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      color: var(--color-light-grey);
+    }
+  }
+}
+
+.info-footer {
+  @media (max-width: 1149.98px) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  @media (max-width: 579.98px) {
+    grid-area: auto;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+  }
+  &__content {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 28px;
+
+    @media (max-width: 1149.98px) {
+      gap: 15px;
+    }
+  }
+  &__small-title {
+    font-family: 'Cardo', sans-serif;
+    font-size: 1.05rem;
+    line-height: 150%;
+    letter-spacing: 0.36px;
+    color: #ffffff;
+  }
+  &__text {
+    font-size: 1rem;
+    line-height: 159%;
+    color: var(--color-light-grey);
+  }
+  &__link:hover {
+    text-decoration: underline;
   }
 }
