@@ -128,7 +128,7 @@ body.is-fixed {
   align-items: center;
   justify-content: center;
   padding: 5px 52px;
-  font-family: "Cardo", sans-serif, serif;
+  font-family: "Cardo", sans-serif, sans-serif, serif;
   letter-spacing: 0.57px;
   transition: background-color 0.2s linear;
   text-transform: capitalize;
@@ -141,7 +141,7 @@ body.is-fixed {
 }
 
 .secondary-btn {
-  font-family: "Cardo", sans-serif;
+  font-family: "Cardo", sans-serif, sans-serif;
   font-size: 1.1rem;
   line-height: 150%;
   letter-spacing: 0.38px;
@@ -168,7 +168,7 @@ body.is-fixed {
   justify-content: center;
 }
 .title-block__title {
-  font-family: "Cardo", sans-serif;
+  font-family: "Cardo", sans-serif, sans-serif;
   font-size: 2.47rem;
   line-height: 119%;
   text-transform: capitalize;
@@ -362,7 +362,7 @@ body.is-fixed {
   }
 }
 .hero__uptitle {
-  font-family: "Cardo", sans-serif, serif;
+  font-family: "Cardo", sans-serif, sans-serif, serif;
   font-size: 1.2rem;
   line-height: 171%;
   letter-spacing: 1.2px;
@@ -387,7 +387,7 @@ body.is-fixed {
   }
 }
 .hero__title {
-  font-family: "Cardo", sans-serif, serif;
+  font-family: "Cardo", sans-serif, sans-serif, serif;
   font-size: 3.8rem;
   line-height: 122%;
   letter-spacing: 1.3px;
@@ -450,7 +450,7 @@ body.is-fixed {
   }
 }
 .buttons-hero__btn_underlined {
-  font-family: "Cardo", sans-serif, serif;
+  font-family: "Cardo", sans-serif, sans-serif, serif;
   font-size: 1.1rem;
   line-height: 158%;
   letter-spacing: 0.38px;
@@ -503,7 +503,7 @@ body.is-fixed {
   left: 0;
 }
 .achievements-hero__title {
-  font-family: "Cardo", sans-serif, serif;
+  font-family: "Cardo", sans-serif, sans-serif, serif;
   font-size: 1.4rem;
   line-height: 120%;
   letter-spacing: 0.48px;
@@ -580,7 +580,7 @@ body.is-fixed {
   max-width: 280px;
 }
 .block-author__title {
-  font-family: "Cardo", sans-serif;
+  font-family: "Cardo", sans-serif, sans-serif;
   font-size: 1.88rem;
   line-height: 119%;
   letter-spacing: 0.32px;
@@ -603,7 +603,7 @@ body.is-fixed {
   margin-bottom: 27px;
 }
 .block-author__add-info span {
-  font-family: "Cardo", sans-serif;
+  font-family: "Cardo", sans-serif, sans-serif;
   font-size: 1.4rem;
   line-height: 120%;
   color: var(--color-blue);
@@ -714,7 +714,7 @@ body.is-fixed {
   border-right: 1px solid var(--color-yellow);
 }
 .cols-about__number {
-  font-family: "Cardo", sans-serif;
+  font-family: "Cardo", sans-serif, sans-serif;
   font-size: 3.1rem;
   line-height: 143%;
   color: var(--color-blue);
@@ -755,7 +755,7 @@ body.is-fixed {
   position: relative;
 }
 .contact-about__title {
-  font-family: "Cardo";
+  font-family: "Cardo", sans-serif;
   font-size: 1.3rem;
   line-height: 120%;
   color: var(--color-yellow);
@@ -811,7 +811,7 @@ body.is-fixed {
   margin-bottom: 22px;
 }
 .sponsors__title {
-  font-family: "Cardo";
+  font-family: "Cardo", sans-serif;
   font-size: 1.4rem;
   line-height: 120%;
   color: var(--color-blue);
@@ -926,6 +926,11 @@ body.is-fixed {
   grid-template-rows: repeat(2, 272px);
   gap: 30px;
 }
+@media (max-width: 1092.98px) {
+  .learn__cards {
+    flex: 0 1 auto;
+  }
+}
 @media (max-width: 619.98px) {
   .learn__cards {
     display: block;
@@ -986,7 +991,7 @@ body.is-fixed {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  font-family: "Cardo";
+  font-family: "Cardo", sans-serif;
 }
 .card-learn__number {
   margin-bottom: 30px;
@@ -1079,7 +1084,7 @@ body.is-fixed {
   flex-direction: column;
 }
 .card-knowledge__title {
-  font-family: "Cardo";
+  font-family: "Cardo", sans-serif;
   font-size: 1.4rem;
   line-height: 120%;
   color: var(--color-blue);
@@ -1107,7 +1112,7 @@ body.is-fixed {
   align-items: center;
 }
 .card-info__title {
-  font-family: "Cardo";
+  font-family: "Cardo", sans-serif;
   font-size: 1.3rem;
   line-height: 140%;
   color: var(--color-blue);
@@ -1131,4 +1136,152 @@ body.is-fixed {
   font-size: 1rem;
   line-height: 159%;
   color: var(--color-light-grey);
+}
+
+.comments__body {
+  padding: 130px 0 150px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+@media (max-width: 1023.98px) {
+  .comments__body {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767.98px) {
+  .comments__body {
+    padding: 50px 0;
+  }
+}
+.comments__content {
+  flex: 0 1 435px;
+}
+@media (max-width: 1023.98px) {
+  .comments__content {
+    flex: 0 1 auto;
+  }
+}
+.comments__title-block {
+  margin-bottom: 33px;
+}
+.comments__text {
+  font-size: 1.1rem;
+  line-height: 180%;
+  color: var(--color-light-grey);
+  margin-bottom: 22px;
+}
+.comments__sub-text {
+  font-size: 1.05rem;
+  line-height: 158%;
+  color: var(--color-blue);
+}
+.comments__cards {
+  flex: 0 1 782px;
+  display: grid;
+  gap: 20px;
+  grid-template: repeat(2, 1fr)/repeat(2, minmax(300px, 380px));
+}
+@media (max-width: 1023.98px) {
+  .comments__cards {
+    flex: 0 1 auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .comments__cards {
+    grid-template: auto/repeat(1, 1fr);
+  }
+}
+@media (min-width: 767.98px) {
+  .comments__card:last-child {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: auto 0;
+  }
+}
+
+.rating-comments {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.rating-comments__dots {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.rating-comments__dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  border: 1px solid var(--color-yellow);
+}
+.rating-comments__dot:last-child {
+  background-color: transparent;
+}
+.rating-comments__num {
+  font-size: 1.3rem;
+  line-height: 120%;
+  color: var(--color-blue);
+}
+
+.card-comments {
+  background-color: var(--color-blue);
+  padding: 30px 40px 25px 35px;
+}
+@media (max-width: 1294.98px) {
+  .card-comments {
+    padding: 20px;
+  }
+}
+.card-comments__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 424.98px) {
+  .card-comments__header img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.card-comments__title {
+  font-family: "Cardo", sans-serif;
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.card-comments__dots {
+  display: flex;
+  gap: 3px;
+}
+.card-comments__dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+}
+.card-comments__quote {
+  font-family: "Cardo", sans-serif;
+  font-size: 1.3rem;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 13px;
+}
+.card-comments__quote::before {
+  content: "“";
+}
+.card-comments__quote::after {
+  content: "”";
+}
+.card-comments__text {
+  font-size: 1.05rem;
+  line-height: 160%;
+  color: var(--color-blue-grey);
 }
