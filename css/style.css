@@ -789,11 +789,20 @@ body.is-fixed {
 }
 .sponsors__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-  row-gap: 35px;
+  grid-template-columns: repeat(4, 300px);
+  gap: 16px;
   justify-content: center;
+}
+@media (max-width: 1244.98px) {
+  .sponsors__content {
+    grid-template-columns: repeat(2, 300px);
+    gap: 45px;
+  }
+}
+@media (max-width: 624.98px) {
+  .sponsors__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .sponsors__card {
   text-align: center;
@@ -913,13 +922,16 @@ body.is-fixed {
 .learn__cards {
   flex: 0 1 636px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 272px);
   gap: 30px;
 }
-@media (max-width: 1092.98px) {
+@media (max-width: 619.98px) {
   .learn__cards {
-    flex: 0 0 auto;
-    max-width: 100%;
+    display: block;
+  }
+  .learn__cards > *:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 .learn__media {
@@ -942,7 +954,7 @@ body.is-fixed {
     padding-bottom: 0;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 619.98px) {
   .learn__image {
     border: none;
   }
@@ -962,7 +974,7 @@ body.is-fixed {
     position: relative;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 619.98px) {
   .learn__image img {
     top: 0;
     left: 0;
@@ -972,35 +984,33 @@ body.is-fixed {
 .card-learn {
   background-color: #f4f8ff;
   padding: 30px;
-  min-height: 272px;
   display: flex;
   flex-direction: column;
   font-family: "Cardo";
 }
 .card-learn__number {
-  flex: 1 1 auto;
+  margin-bottom: 30px;
   font-size: 1.4rem;
   line-height: 125%;
   color: var(--color-blue);
-  position: relative;
-  z-index: 2;
-}
-.card-learn__number::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: -13px;
+  display: inline-flex;
+  background-color: var(--color-yellow);
   width: 50px;
   height: 50px;
-  background-color: var(--color-yellow);
   border-radius: 50%;
-  z-index: -1;
+  justify-content: center;
+  align-items: center;
 }
 .card-learn__text {
   font-size: 1.4rem;
   line-height: 140%;
   color: var(--color-blue);
   max-width: 227px;
+}
+@media (max-width: 619.98px) {
+  .card-learn__text {
+    max-width: 100%;
+  }
 }
 
 .knowledge {

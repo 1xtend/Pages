@@ -736,10 +736,17 @@ body {
   }
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 16px;
-    row-gap: 35px;
+    grid-template-columns: repeat(4, 300px);
+    gap: 16px;
     justify-content: center;
+
+    @media (max-width: 1244.98px) {
+      grid-template-columns: repeat(2, 300px);
+      gap: 45px;
+    }
+    @media (max-width: 624.98px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__card {
     text-align: center;
@@ -861,12 +868,16 @@ body {
   &__cards {
     flex: 0 1 636px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 272px);
     gap: 30px;
 
-    @media (max-width: 1092.98px) {
-      flex: 0 0 auto;
-      max-width: 100%;
+    @media (max-width: 619.98px) {
+      display: block;
+
+      & > *:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
   }
   &__media {
@@ -887,7 +898,7 @@ body {
       padding-bottom: 0;
     }
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 619.98px) {
       border: none;
     }
 
@@ -904,7 +915,7 @@ body {
         position: relative;
       }
 
-      @media (max-width: 767.98px) {
+      @media (max-width: 619.98px) {
         top: 0;
         left: 0;
       }
@@ -915,36 +926,32 @@ body {
 .card-learn {
   background-color: #f4f8ff;
   padding: 30px;
-  min-height: 272px;
   display: flex;
   flex-direction: column;
   font-family: 'Cardo';
 
   &__number {
-    flex: 1 1 auto;
+    margin-bottom: 30px;
     font-size: 1.4rem;
     line-height: 125%;
     color: var(--color-blue);
-    position: relative;
-    z-index: 2;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      left: -13px;
-      width: 50px;
-      height: 50px;
-      background-color: var(--color-yellow);
-      border-radius: 50%;
-      z-index: -1;
-    }
+    display: inline-flex;
+    background-color: var(--color-yellow);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
   }
   &__text {
     font-size: 1.4rem;
     line-height: 140%;
     color: var(--color-blue);
     max-width: 227px;
+
+    @media (max-width: 619.98px) {
+      max-width: 100%;
+    }
   }
 }
 
