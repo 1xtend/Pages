@@ -14,8 +14,13 @@
   --color-grey-bg-light: #f5f8fc;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 
   &.is-fixed {
     overflow-y: hidden;

@@ -99,8 +99,13 @@ h6 {
   --color-grey-bg-light: #f5f8fc;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 body.is-fixed {
   overflow-y: hidden;
