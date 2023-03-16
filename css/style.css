@@ -1307,6 +1307,7 @@ body.is-fixed {
 }
 .articles__title-block {
   margin-bottom: 70px;
+  text-align: center;
 }
 .articles__cards {
   display: grid;
