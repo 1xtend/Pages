@@ -138,29 +138,7 @@ body {
     justify-content: space-between;
     gap: 10px;
   }
-  &__socials {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 38px;
 
-    @media (max-width: 1066.98px) {
-      display: none;
-    }
-  }
-  &__social {
-    width: 45px;
-    height: 45px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s linear;
-
-    &:hover {
-      background-color: rgb(235, 235, 235);
-    }
-  }
   &__nav {
     margin-left: auto;
   }
@@ -186,9 +164,39 @@ body {
     border-bottom-left-radius: 5px;
     padding: 90px 50px 15px 15px;
     gap: 30px;
+    width: 250px;
     transform: translateX(100%);
     transition: transform 0.2s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 38px;
+
+    @media (max-width: 1106.98px) {
+      display: none;
+    }
+
+    @media (max-width: 870px) {
+      margin-left: 0;
+      display: flex;
+    }
+  }
+  &__social {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      background-color: rgb(235, 235, 235);
+    }
   }
 
   &__link {
